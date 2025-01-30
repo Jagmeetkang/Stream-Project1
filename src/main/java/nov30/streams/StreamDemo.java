@@ -12,7 +12,7 @@ public class StreamDemo {
 
         List<String> cheapDishes = dishes.stream().filter(d -> d.getPrice() < 10)
                 .map(Dish::getName).distinct().collect(Collectors.toList());
-        System.out.println(cheapDishes);
+        System.out.println(cheapDishes); //print cheapdishes
     }
 
 
